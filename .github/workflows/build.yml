@@ -3,10 +3,11 @@ name: Build my application
 on: push
 
 jobs:
-  name: Build out app
-  runs-on: ubuntu-latest
-  steps:
-    - name: Print Current Directory
-      run: pwd
-    - name: List Filed in Directory
-      run: ls
+  build:
+    name: Build out app
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Current Directory
+        run: pwd
+      - name: List Filed in Directory
+        run: ls
