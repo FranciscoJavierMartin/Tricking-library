@@ -7,7 +7,9 @@ jobs:
     name: Build out app
     runs-on: ubuntu-latest
     steps:
-      - name: Print Current Directory
-        run: pwd
-      - name: List Filed in Directory
+      - name: Pull Code
+        uses: actions/checkout@v2
+      - name: Build API
+        run: dotnet build
+      - name: Build client
         run: ls
